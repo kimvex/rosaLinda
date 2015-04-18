@@ -1,4 +1,5 @@
 gris_azulado = #353C45
+gris_claro = #788594
 azul = #3A99D8
 
 body
@@ -24,7 +25,6 @@ body
 .accesoriosIzq
 	float left
 	width: 68%
-	background red
 
 .menu
 	width 100%
@@ -44,9 +44,14 @@ body
 			text-decoration none
 			display block
 			padding: 0.7em 2em;
-			&hover:
+			-webkit-transition: .2s;
+			-moz-transition: .2s;
+			color gris_claro
+			&:hover
 				background azul
 				color white
+				-webkit-transition: .2s;
+				-moz-transition: .2s;
 
 .accesorioDrechos
 	float right
