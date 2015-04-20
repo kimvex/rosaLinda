@@ -2,46 +2,93 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Amiga Rosalinda</title>
+	<title>Ayuda</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilo.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="lib/calendar.min.js"></script>
+	<script src="lib/calendario.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link href="css/calendar.min.css" rel="stylesheet">
 </head>
 <body>
 	<section class="cuerpo">
 		<header class="slider">
 		
 		</header>
+		<nav class="menu">
+			<ul class="menuItem">
+				<li class="item"><a href="#">Inicio</a></li>
+				<li class="item"><a href="#">Propuesta</a></li>
+				<li class="item"><a href="#">Sala de prensa</a></li>
+				<li class="item"><a href="#">Galeria</a></li>
+				<li class="item"><a href="#">Conoceme</a></li>
+				<li class="item"><a href="#">Saquemos al centro del bache</a></li>
+			</ul>
+		</nav>
 		<section class="cuerpoAccesorios">
 			<div class="accesoriosIzq">
-				<nav class="menu">
-					<ul class="menuItem">
-						<li class="item"><a href="#">Principal</a></li>
-						<li class="item"><a href="#">Noticias</a></li>
-						<li class="item"><a href="#">Quiosco Digital</a></li>
-						<li class="item"><a href="#">Ahota TV</a></li>
-					</ul>
-				</nav>
-				<ul class="acesorios">
-					<li class="accesorio"></li>
-					<li class="accesorio"></li>
+				<ul class="accesorios">
+					<li class="accesorio">
+						<input type="text" class="buscador" placeholder="Buscar">
+						<botton class="botonBus icon-search"></botton>
+					</li>
+					<li class="accesorio calendary">
+						<div class="calendar" data-color="normal"><div data-role="day" data-day=""><div data-role="event" data-name="Soy un evento que siempre saldr&eacute; ma&ntilde;ana" data-start="9.00" data-end="9.30" data-location="martiniglesias.eu"></div></div></div>
+					</li>
 				</ul>
 				<div class="twitter">
-					
+					<a class="twitter-timeline" href="https://twitter.com/benjaChomin" data-widget-id="589585308032733184">Tweets por el @benjaChomin.</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div>
 			<aside class="accesorioDrechos">
 				<ul class="listaDerecha">
-					<li class="itemD"></li>
-					<li class="itemD"></li>
+					<li class="itemD">
+						<figure>
+							<img src="img/18.jpg">
+						</figure>
+						<p>
+							Mira el nuevo amanecer del centro,
+							es hora de rescatar el centro
+						</p>
+					</li>
+					<li class="itemD climaD">
+						<div id="cont_3ba26b0a42b4d2fcc0fa27c930a00f87">
+						  <span id="h_3ba26b0a42b4d2fcc0fa27c930a00f87"><a id="a_3ba26b0a42b4d2fcc0fa27c930a00f87" href="http://www.tiempo.com/villahermosa_mexico-l22298.htm" target="_blank" style="color:#656565;font-family:Arial;font-size:14px;">Predicción 14 días</a></span>
+						  <script type="text/javascript" async src="https://www.tiempo.com/wid_loader/3ba26b0a42b4d2fcc0fa27c930a00f87"></script>
+						</div>
+					</li>
 				</ul>
 			</aside>
 		</section>
 	</section>
 	<footer>
 		<ul class="listaBaja">
-			<li class="noticiasB"></li>
-			<li class="videoB"></li>
+			<li class="noticiasB">
+				<figure class="noticiaFigure">
+					<img src="img/18.jpg" class="imgNf">
+				</figure>
+				<p class="pNf">
+					Mira el nuevo amanecer del centro,
+					es hora de rescatar el centro
+				</p>
+			</li>
+			<li class="videoB">
+				<embed class="videoYT" src="https://www.youtube.com/embed/iKwi6iye4sc?list=PL4n0oqNQWaJvwN3xPwJXirIgpmP5_9GBu" ></embed>
+				<div class="face">
+					<div class="fb-page" data-href="https://www.facebook.com/tecnologiatodoeldia" data-width="200" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tecnologiatodoeldia"><a href="https://www.facebook.com/tecnologiatodoeldia">Tecnología todo el día</a></blockquote></div></div>
+				</div>
+			</li>
 		</ul>
 	</footer>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
